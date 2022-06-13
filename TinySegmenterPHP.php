@@ -184,8 +184,5 @@ class TinySegmenterPHP {
   }
 }
 
-$segmenter = new TinySegmenterPHP();
-$segs = $segmenter->segment("私の名前は中野ではありません"); 
-var_dump($segs);
 
 
