@@ -14,7 +14,7 @@ $segs = $segmenter->segment("私の名前は中野ではありません");
 var_dump($segs);
 
 # お詫び
-自分がPHPで使いたかったので、JavaScriptのコードをPHPに変換しただけで、詳しいことはよくわかりません。
+自分がTinySegmenterをPHPで使いたかったので、JavaScriptのコードをPHPに変換しただけで、詳しいことはよくわかりません。
 
 たぶん、コードの前半が機械学習の学習データだということは予想がつきます。
 
