@@ -5,6 +5,7 @@ TinySegmenter:Javascriptだけで書かれたコンパクトな分かち書き�
 
 TinySegmenterPHPも同様です。
 
+[本家TinySegmenterの説明やソースコードはこちらです](http://chasen.org/~taku/software/TinySegmenter/)
 # 使い方
 $segmenter = new TinySegmenterPHP();
 
