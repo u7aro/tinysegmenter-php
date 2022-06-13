@@ -7,6 +7,8 @@ TinySegmenterPHPも同様です。
 
 # 使い方
 $segmenter = new TinySegmenterPHP();
+
 $segs = $segmenter->segment("私の名前は中野ではありません"); 
+
 var_dump($segs);
 
