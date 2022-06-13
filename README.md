@@ -6,14 +6,14 @@ TinySegmenter:Javascriptだけで書かれたコンパクトな分かち書き�
 TinySegmenterPHPも同様です。
 
 [本家TinySegmenterの説明やソースコードはこちらです](http://chasen.org/~taku/software/TinySegmenter/)
-# 使い方
+## 使い方
 $segmenter = new TinySegmenterPHP();
 
 $segs = $segmenter->segment("私の名前は中野ではありません"); 
 
 var_dump($segs);
 
-# お詫び
+## お詫び
 自分がTinySegmenterをPHPで使いたかったので、JavaScriptのコードをPHPに変換しただけで、詳しいことはよくわかりません。
 
 たぶん、コードの前半が機械学習の学習データだということは予想がつきます。
