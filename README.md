@@ -1,26 +1,55 @@
-# TinySegmenterPHP
-TinySegmenter:Javascriptだけで書かれたコンパクトな分かち書きソフトウェア (c) 2008 Taku Kudo のPHP移植版です
+# TinySegmenter PHP
 
->TinySegmenterはフリーソフトウェアです. 修正BSDライセンスに従って本ソフトウェアを使用,再配布することができます.
+Taku Kudo 氏が開発した JavaScript の分かち書きライブラリ [TinySegmenter] を PHP へ移植したものです。
 
-TinySegmenterPHPも同様です。
+このライブラリは sugakenn 氏がPHPへ移植した [TinySegmenterPHP] を元に、パフォーマンス的な改善やコードのリファクタリング、 Composer へ対応して使いやすくしたものです。勝手ながら名称やクラス名を少し改定しております。
 
-[本家TinySegmenterの説明やソースコードはこちらです](http://chasen.org/~taku/software/TinySegmenter/)
+## TinySegmenter とは？
+
+[TinySegmenter] は、日本語の文章を単語単位で分割するシンプルな形態素解析ライブラリです。機械学習を用いたアルゴリズムを採用しており、辞書なしで動作するのが特徴です。
+
 ## 使い方
-$segmenter = new TinySegmenterPHP();
 
-$segs = $segmenter->segment("私の名前は中野ではありません"); 
+このライブラリを使用すると、日本語の文章を単語単位に分割できます。以下の例では「私の名前は中野ではありません」を分かち書きしています。
 
-var_dump($segs);
+```php
+require __DIR__ . '/vendor/autoload.php';
 
-## お断り
-自分がTinySegmenterをPHPで使いたかったので、JavaScriptのコードをPHPに変換しただけです。
+$text = '私の名前は中野ではありません';
+$result = U7aro\TinySegmenter\TinySegmenter::segment($text);
 
-たぶんコードの前半が機械学習の学習データなんだろうな、ぐらいにしかわかりません。
+var_dump($result);
+// array(10) {
+//   [0]=>
+//   string(3) "私"
+//   [1]=>
+//   string(3) "の"
+//   [2]=>
+//   string(6) "名前"
+//   [3]=>
+//   string(3) "は"
+//   [4]=>
+//   string(6) "中野"
+//   [5]=>
+//   string(3) "で"
+//   [6]=>
+//   string(3) "は"
+//   [7]=>
+//   string(6) "あり"
+//   [8]=>
+//   string(6) "ませ"
+//   [9]=>
+//   string(3) "ん"
+// }
+```
 
-コード中のコメントアウト部
+## 注意事項
 
-//$score += $this->ts_(TinySegmenterPHP::$TC5__,$c4 . $c5 . $c6);
+本ライブラリはオリジナルの TinySegmenter を PHP に移植したものです。そのため、機械学習ロジック自体には変更を加えておらず、分かち書きの精度や挙動はオリジナルに準拠します。もしロジックに関するバグが発生した場合、オリジナル版の修正が行われるまで対応できない可能性がありますのでご了承ください。
 
-は本家のコードからそのまま踏襲しています。
+## ライセンス
 
+ライセンスはオリジナルの [TinySegmenter] および [TinySegmenterPHP] と同様に、修正BSDライセンスが適用されます。
+
+[TinySegmenter]: http://chasen.org/~taku/software/TinySegmenter/
+[TinySegmenterPHP]: https://github.com/sugakenn/TinySegmenterPHP
