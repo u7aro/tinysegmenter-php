@@ -11,7 +11,7 @@
 // sugakenn
 // TinySegmenterPHP is freely distributable under the terms of a new BSD licence.
 
-class TinySegmenterPHP {
+class TinySegmenter {
 
   private static $BIAS__ = -332;
   private static $BC1__ = array("HH"=>6,"II"=>2461,"KH"=>406,"OH"=>-1378);
