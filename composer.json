@@ -1,0 +1,22 @@
+{
+    "name": "u7aro/tinysegmenter-php",
+    "description": "This is a PHP port of TinySegmenter, a JavaScript library for Japanese text segmentation.",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": ["tinysegmenter", "japanese", "text-segmentation", "tokenization"],
+    "autoload": {
+        "psr-4": {
+            "U7aro\\TinySegmenter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yutaro Ohno"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "php": ">=8.0",
+        "ext-mbstring": "*"
+    }
+}
