@@ -8,6 +8,14 @@ Taku Kudo 氏が開発した JavaScript の分かち書きライブラリ [TinyS
 
 [TinySegmenter] は、日本語の文章を単語単位で分割するシンプルな形態素解析ライブラリです。機械学習を用いたアルゴリズムを採用しており、辞書なしで動作するのが特徴です。
 
+## インストール
+
+[Composer] を使ってインストールしてください。
+
+```bash
+composer require u7aro/tinysegmenter-php
+```
+
 ## 使い方
 
 このライブラリを使用すると、日本語の文章を単語単位に分割できます。以下の例では「私の名前は中野ではありません」を分かち書きしています。
@@ -58,3 +66,4 @@ var_dump($result);
 
 [TinySegmenter]: http://chasen.org/~taku/software/TinySegmenter/
 [TinySegmenterPHP]: https://github.com/sugakenn/TinySegmenterPHP
+[Composer]: https://getcomposer.org/
