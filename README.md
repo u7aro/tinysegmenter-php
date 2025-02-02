@@ -2,7 +2,7 @@
 
 Taku Kudo 氏が開発した JavaScript の分かち書きライブラリ [TinySegmenter] を PHP へ移植したものです。
 
-このライブラリは sugakenn 氏がPHPへ移植した [TinySegmenterPHP] を元に、パフォーマンス的な改善やコードのリファクタリング、 Composer へ対応して使いやすくしたものです。勝手ながら名称やクラス名を少し改定しております。
+このライブラリは sugakenn 氏がPHPへ移植した [TinySegmenterPHP] を元に、パフォーマンス的な改善や最新の PHP の機能を取り入れるリファクタリングをし、Composer へ対応して使いやすくしたものです。勝手ながら名称やクラス名を少し改定しております。
 
 ## TinySegmenter とは？
 
