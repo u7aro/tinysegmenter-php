@@ -26,10 +26,10 @@ composer require u7aro/tinysegmenter-php
 このライブラリを使用すると、日本語の文章を単語単位に分割できます。以下の例では「私の名前は中野ではありません」を分かち書きしています。
 
 ```php
-require __DIR__ . '/vendor/autoload.php';
+use U7aro\TinySegmenter\TinySegmenter;
 
 $text = '私の名前は中野ではありません';
-$result = U7aro\TinySegmenter\TinySegmenter::segment($text);
+$result = TinySegmenter::segment($text);
 
 var_dump($result);
 // array(10) {
